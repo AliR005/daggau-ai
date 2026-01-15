@@ -1,0 +1,29 @@
+[project]
+name = "rag-chat"
+version = "0.1.0"
+description = ""
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+    { name = "Ali", email = "AliR.404@yandex.ru" }
+]
+dependencies = [
+  "flet>=0.80.1",
+  "openai>=2.14.0",
+  "python-dotenv>=1.2.1",
+  "pyyaml>=6.0.3",
+]
+
+[dependency-groups]
+dev = [
+  "flet[all]>=0.80.1",
+]
+
+[tool.flet]
+org = "com.mycompany"
+product = "rag-chat"
+company = "Flet"
+copyright = "Copyright (C) 2026 by Flet"
+
+[tool.flet.app]
+path = "src"
